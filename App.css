@@ -1,0 +1,103 @@
+body {
+  background-image: url('../img/diana-polekhina-r6u-fhltchE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(75deg, #1c2433 0%, #1c2433 50%, rgba(28, 36, 51, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-name {
+  font-size: 6rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  color: #00bcd4;
+  margin-bottom: 50px;
+}
+
+.form-card {
+  width: 50%;
+  max-width: 350px;
+  padding: 0 25% 0 25%;
+}
+
+.form-title {
+  font-size: 38px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #e8e8e8ed;
+  padding-bottom: 12px;
+}
+
+.form-subtitle {
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+  color: #afafaf;
+  padding-bottom: 24px;
+}
+
+.auth {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.auth-label {
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  font-size: 11px;
+  color: #afafaf;
+  font-family: 'Arial', sans-serif;
+  width: 100px;
+}
+
+.auth-input {
+  background-color: #485265;
+  color: white;
+  font-family: "Arial", sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 24px 18px 12px 18px;
+  width: calc(100% - 18px - 18px);
+  margin-bottom: 12px;
+}
+
+.auth-button {
+  width: 100%;
+  height: 53px;
+  color: white;
+  background-color: #8bc34a;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  transition: all 0.44s ease;
+}
+
+.auth-button:hover {
+  filter: brightness(145%);
+}
+
+.chat-wrapper {
+  height: 80vh;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  background: #2b2f3c;
+}
