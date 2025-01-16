@@ -1,15 +1,18 @@
-import { PrettyChatWindow } from 'react-chat-engine-pretty'
+import React from 'react';
+
+import {
+    MultiChatWindow ,
+    MultiChatSocket,
+    useMultiChatLogic,
+  } from 'react-chat-engine-advanced';
+
 
 const ChatsPage = (props) => {
-   
-    return (
-        <div style={{ height : "100vh"}}>
-            <PrettyChatWindow
-                projectId='d4880967-2589-42de-ba1a-17d08635897e'
-                username={props.user.username}
-                secret={props.user.secret}
-                style={{ height: '100%'}}
-            />
+    const chatProps = useMultiChatLogic('fdabf567-fe31-4d20-bfea-d46cf866875d',props.user.username, props.user.secret);
+    return( 
+        <div style = {{ height : '100vh' }}>
+            <MultiChatSocket {...chatProps}/>
+            <MultiChatWindow {...chatProps} style = {{height: '100%'}} />
         </div>
     )
 }
